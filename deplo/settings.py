@@ -13,7 +13,7 @@ SECRET_KEY = '%oz8il=i(*hj9)a+54cyqc=fot5ya88snxbm2&6f#eu05lyc=('
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
-DEBUG = True
+DEBUG = False
 
 #ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['deplok.herokuapp.com', '127.0.0.1', 'vijaykumaralokhande.github.io/deplo', 'portfolio-vijaykumaral.herokuapp.com']

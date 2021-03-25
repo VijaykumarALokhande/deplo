@@ -70,10 +70,18 @@
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
           <h1 class="fw-light">All Works / Contributions </h1>
+          <hr/>
         </div>
       </div>
     </section>
+    <div class="container">
+      {%for work in worklist.all%}
+      <a href="#"><h4>{{work.title}}</h4></a>
+      <p class="card-text">{{work.post_date}}</p>
+      {%endfor%}
+    </div>
   </main>
+
 
   <footer class="text-muted py-5">
     <div class="container, text-center">

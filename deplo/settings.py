@@ -22,6 +22,7 @@ ALLOWED_HOSTS = ['deplok.herokuapp.com', '127.0.0.1', 'vijaykumaralokhande.githu
 
 INSTALLED_APPS = [
     'jobs.apps.JobsConfig',
+    'works.apps.WorksConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -75,24 +76,24 @@ WSGI_APPLICATION = 'deplo.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-
-#postgres://ebdtqgqnajnvoj:3652ca4c3e141daf7c82bacfc80f55370293f6f4dd222d759b0b7820d5badd90@ec2-18-207-95-219.compute-1.amazonaws.com:5432/dbsun2vrlhq4dg
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'dbsun2vrlhq4dg',
-#         'USER': 'ebdtqgqnajnvoj',
-#         'PASSWORD': '3652ca4c3e141daf7c82bacfc80f55370293f6f4dd222d759b0b7820d5badd90',
-#         'HOST': 'ec2-18-207-95-219.compute-1.amazonaws.com',
-#         'PORT': '5432',
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
+
+#postgres://ebdtqgqnajnvoj:3652ca4c3e141daf7c82bacfc80f55370293f6f4dd222d759b0b7820d5badd90@ec2-18-207-95-219.compute-1.amazonaws.com:5432/dbsun2vrlhq4dg
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dbsun2vrlhq4dg',
+        'USER': 'ebdtqgqnajnvoj',
+        'PASSWORD': '3652ca4c3e141daf7c82bacfc80f55370293f6f4dd222d759b0b7820d5badd90',
+        'HOST': 'ec2-18-207-95-219.compute-1.amazonaws.com',
+        'PORT': '5432',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators

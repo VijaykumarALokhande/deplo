@@ -56,7 +56,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
             <a class="nav-link" href="{%static 'Resume8.pdf'%}">Resume</a>
-            <a class="nav-link" href="{%url 'workspagename'%}">Works</a>
+            <a class="nav-link active" href="{%url 'workspagename'%}">Works</a>
             <a class="nav-link" href="https://www.linkedin.com/in/vijaykumar-lokhande-5352611b2">LinkedIn</a>
           </div>
         </div>
@@ -69,35 +69,10 @@
     <section class="py-5 text-center container">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light">Welcome, I am Vijaykumar A. L.</h1>
-          <p class="lead text-muted">Actively looking for an Internship. Bound to my ethics.</p>
-          <p>
-            <a href="mailto:vijaysaurabh1999@gmail.com" class="btn btn-primary my-2">Mail Me!</a>
-          </p>
-          <img src="{%static 'VIJAYKUMAR-LOKHANDE1.jpg'%}" height="200"/>
+          <h1 class="fw-light">All Works / Contributions </h1>
         </div>
       </div>
     </section>
-
-    <div class="album py-5 bg-light">
-      <div class="container">
-
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          {%for job in listofjobs.all%}
-          <div class="col">
-            <div class="card shadow-sm">
-              <img class="card-img-top" src="{{ job.image.url }}"/>
-              <div class="card-body">
-                <p class="card-text">{{job.summary}}</p>
-              </div>
-            </div>
-          </div>
-          {%endfor%}
-
-        </div>
-      </div>
-    </div>
-
   </main>
 
   <footer class="text-muted py-5">

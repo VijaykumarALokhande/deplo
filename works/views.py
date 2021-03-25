@@ -1,3 +1,6 @@
 from django.shortcuts import render
 
-# Create your views here.
+from .models import Work
+def home(request):
+    objs = Work.objects
+    return render(request, 'works.html', {"worklist":objs})
